@@ -2,7 +2,7 @@
 
 import sys
 
-def translate_sequence(rna_sequence: str, genetic_code: dict) -> str:
+def translate_sequence(rna_sequence, genetic_code):
     return_protein = ""
 
     if len(rna_sequence) < 3:
@@ -61,7 +61,7 @@ def translate_sequence(rna_sequence: str, genetic_code: dict) -> str:
         A string of the translated amino acids.
     """
 
-def get_all_translations(rna_sequence, genetic_code) -> list[str]:
+def get_all_translations(rna_sequence, genetic_code):
     
     # start a list of translations
     translations = []
@@ -169,7 +169,7 @@ def get_complement(sequence):
     'UACG'
     """
 
-def reverse_and_complement(sequence: str) -> str:
+def reverse_and_complement(sequence):
     reverse_sequence = get_reverse(sequence)
     complement_and_reverse_sequence = get_complement(reverse_sequence)
 
